@@ -13,5 +13,21 @@ public class SingletonTest {
 		
 		assertEquals("Two objects are different", firstInstance, secondInstance);
 	}
+	
+	@Test
+	public void testLazyInitializedSingleton() {
+		LazyInitializedSingleton firstInstance = LazyInitializedSingleton.getInstance();
+		LazyInitializedSingleton secondInstance = LazyInitializedSingleton.getInstance();
+		
+		assertEquals("Two objects are different", firstInstance, secondInstance);
+	}
+	
+	@Test
+	public void testThreadSafeSingleton() {
+		ThreadSafeSingleton firstInstance = ThreadSafeSingleton.getInstance();
+		ThreadSafeSingleton secondInstance = ThreadSafeSingleton.getInstance();
+		
+		assertEquals("Two objects are different", firstInstance, secondInstance);
+	}
 
 }
