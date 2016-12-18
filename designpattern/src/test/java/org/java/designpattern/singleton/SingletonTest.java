@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class SingletonTest {
-
 	@Test
 	public void testEagerInitializedSingleton() {
 		EagerInitializedSingleton firstInstance = EagerInitializedSingleton.getInstance();
