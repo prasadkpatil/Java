@@ -1,5 +1,9 @@
 package org.java.designpattern.singleton;
 
+/**
+ * @author Prasad Patil
+ *
+ */
 public class LazyInitializedSingleton {
 	private static LazyInitializedSingleton instance = null;
 

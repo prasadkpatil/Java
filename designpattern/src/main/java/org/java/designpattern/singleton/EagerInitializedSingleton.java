@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.java.designpattern.singleton;
 
 /**

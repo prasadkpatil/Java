@@ -1,5 +1,10 @@
 package org.java.designpattern.singleton;
 
+
+/**
+ * @author Prasad Patil
+ *
+ */
 public class ThreadSafeSingleton {
 	private static ThreadSafeSingleton instance;
 

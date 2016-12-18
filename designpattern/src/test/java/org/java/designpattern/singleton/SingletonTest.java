@@ -29,5 +29,13 @@ public class SingletonTest {
 		
 		assertEquals("Two objects are different", firstInstance, secondInstance);
 	}
+	
+	@Test
+	public void testStaticBlockInitializedSingleton() {
+		StaticBlockInitializedSingleton firstInstance = StaticBlockInitializedSingleton.getInstance();
+		StaticBlockInitializedSingleton secondInstance = StaticBlockInitializedSingleton.getInstance();
+		
+		assertEquals("Two objects are different", firstInstance, secondInstance);
+	}
 
 }
